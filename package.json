@@ -1,0 +1,28 @@
+{
+  "name": "nosov-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint: eslint -ignore-path.gitignore .",
+    "start" : "",
+    "deploy" : "",
+    "build" : ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadredre/NOSOV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadredre/NOSOV/issues"
+  },
+  "homepage": "https://github.com/sadredre/NOSOV#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  }
+}
