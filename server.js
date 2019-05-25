@@ -7,7 +7,7 @@ const token = process.env.WEATHER_BOT;
 const appUrl = process.env.APP_URL;
 
 const setWebhook = url => axios.get(`https://api.telegram.org/bot${token}/setWebhook?url=${url}`);
-const sendMessage = (chatId, text) => axios.get(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}`);
+const sendMessage = (chatId, text) => axios.get(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(text)}`);
 const parseWeather = async (date) => {
   const {
     window: { document },
