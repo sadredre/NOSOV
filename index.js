@@ -14,11 +14,12 @@ const parseWeather = async (date) => {
 
 const app = express();
 app.post('/telegram', (req, res) => {
-  const { text, chat:{ id } } = req.body.message;
+  const { text, chat: { id } } = req.body.message;
   parseWeather(text).then(
     weather => sendMessage(id, weather),
-    () => sendMessage(id, 'error')
+    () => sendMessage(id, 'error'),
   );
+  res.send();
 });
 app.get('*', (req, res) => {
   res.send('Hello from Express.js!');
