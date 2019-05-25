@@ -9,3 +9,4 @@ deploy:
   api_key: $HE_TOKEN
   app:
     master: pervayapp
+    test: pevayaapp-test
