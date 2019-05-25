@@ -26,4 +26,4 @@ app.get('*', (req, res) => {
   res.send('Hello from Express.js!');
 });
 app.listen(process.env.PORT || 3000);
-setWebhook(`${process.env.APP_URL}/telegram`);
+setWebhook(`${process.env.APP_URL}telegram`);
