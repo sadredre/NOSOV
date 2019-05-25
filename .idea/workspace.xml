@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612da07a-0439-4085-8065-7db40967a9ae" name="Default Changelist" comment="add scripts">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -45,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="85">
+              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -107,7 +108,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1760" />
@@ -195,7 +196,7 @@
       <workItem from="1558802003221" duration="8796000" />
       <workItem from="1558811107357" duration="1217000" />
       <workItem from="1558812362183" duration="327000" />
-      <workItem from="1558813639432" duration="3290000" />
+      <workItem from="1558813639432" duration="4185000" />
     </task>
     <task id="LOCAL-00001" summary="add scripts">
       <created>1557991823141</created>
@@ -222,7 +223,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44761000" />
+    <option name="totallyTimeSpent" value="45656000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -235,6 +236,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.22604097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -388,8 +390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="85">
+          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
         </state>
       </provider>
     </entry>
