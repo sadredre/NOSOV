@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "canvasjs": "^1.8.1",
     "express": "^4.17.0",
     "jsdom": "^15.1.0"
   }
