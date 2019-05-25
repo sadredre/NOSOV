@@ -4,4 +4,8 @@ node_js:
 cache: npm
 
 script: npm run lint
-after_script: npm run deploy
+deploy:
+  provider: heroku
+  api_key: $HE_TOKEN
+  app:
+    master: pervayapp-master
