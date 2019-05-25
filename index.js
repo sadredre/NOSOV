@@ -1,6 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const { JSDOM } = require('jsdom');
+
 const token = process.env.WEATHER_BOT;
 
 const setWebhook = url => axios.get(`https://api.telegram.org/bot${token}/setWebhook?url=${url}`);
