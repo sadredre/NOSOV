@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ignore-path .gitignore .",
-    "start": "",
-    "deploy": "",
+    "start": "node index.js",
+    "deploy": "now alias --token $NOW_TOKEN $(now --token $NOW_TOKEN --name \"bot-$TRAVIS_BRANCH\") \"bot-$TRAVIS_BRANCH\"",
     "build": ""
   },
   "repository": {
