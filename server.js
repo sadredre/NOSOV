@@ -6,13 +6,9 @@ const bodyParser = require('body-parser');
 const token = process.env.WEATHER_BOT;
 const appUrl = process.env.APP_URL;
 
-const setWebhook = url =>
-  axios.get(`https://api.telegram.org/bot${token}/setWebhook?url=${url}`);
-const sendMessage = (chatId, text) =>
-  axios.get(
-    `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}`,
-  );
-const parseWeather = async date => {
+const setWebhook = url => axios.get(`https://api.telegram.org/bot${token}/setWebhook?url=${url}`);
+const sendMessage = (chatId, text) => axios.get(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}`);
+const parseWeather = async (date) => {
   const {
     window: { document },
   } = await JSDOM.fromURL('', {
@@ -20,21 +16,13 @@ const parseWeather = async date => {
     runScripts: 'dangerously',
   });
   const tabs = Array.from(document.querySelectorAll('.main'));
-  const tab = tabs.filter(el =>
-    el
-      .querySelector('.day-link')
-      .getAttribute('data-link')
-      .includes(date),
-
-  )[0];
-
+  const tab = tabs.filter(el => el.querySelector('.day-link').getAttribute('data-link').includes(date))[0];
   return tab ? tab.querySelector('.temperature').textContent : 'no info';
 };
 
 const app = express();
 app.use(bodyParser.json());
 app.post('/telegram', (req, res) => {
-
   const {
     text,
     chat: { id },
