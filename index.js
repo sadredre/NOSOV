@@ -2,9 +2,8 @@ const express = require('express');
 const axios = require('axios');
 const { JSDOM } = require('jsdom');
 
-const token = process.env.TOKEN || 'token was not provided';
-const setWebhook = url => axios.get(`https://api.telegram.org/bot${token}/setWebhook?url=${url}`);
-const sendMessage = (chatId, text) => axios.get(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}`);
+const setWebhook = url => axios.get(`https://api.telegram.org/bot${'827501344:AAG6sRKaMwJB3VPa-eGADe4BwzJfWUYBn4g'}/setWebhook?url=${url}`);
+const sendMessage = (chatId, text) => axios.get(`https://api.telegram.org/bot${'827501344:AAG6sRKaMwJB3VPa-eGADe4BwzJfWUYBn4g'}/sendMessage?chat_id=${chatId}&text=${text}`);
 const parseWeather = async (date) => {
   const { window: { document } } = await JSDOM.fromURL('', { resources: 'usable', runScripts: 'dangerously' });
   const tabs = Array.from(document.querySelectorAll('.main'));
