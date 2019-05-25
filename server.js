@@ -11,7 +11,7 @@ const sendMessage = (chatId, text) => axios.get(`https://api.telegram.org/bot${t
 const parseWeather = async (date) => {
   const {
     window: { document },
-  } = await JSDOM.fromURL('https://ua.sinoptik.ua/погода-київ',{
+  } = await JSDOM.fromURL('https://ua.sinoptik.ua/погода-київ', {
     resources: 'usable',
     runScripts: 'dangerously',
   });
