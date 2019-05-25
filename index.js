@@ -1,4 +1,5 @@
 const express = require('express');
+const canvas = require ('canvas');
 const axios = require('axios');
 const { JSDOM } = require('jsdom');
 
