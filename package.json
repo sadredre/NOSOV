@@ -2,11 +2,11 @@
   "name": "nosov-task",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ignore-path .gitignore .",
-    "start": "node index.js",
+    "start": "node server.js",
     "deploy": "now alias --token $NOW_TOKEN $(now -e TOKEN=@mykey --token $NOW_TOKEN --name \"bot-$TRAVIS_BRANCH\") \"bot-$TRAVIS_BRANCH\"",
     "build": ""
   },
